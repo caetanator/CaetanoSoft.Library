@@ -5,4 +5,5 @@
 .project
 .settings/
 target/
+/src/main/java/CaetanoSoft/Utilities/Internationalization/Resources/en_US
 
