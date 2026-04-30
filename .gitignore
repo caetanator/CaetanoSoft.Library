@@ -4,12 +4,7 @@
 .classpath
 .github
 .project
-<<<<<<< HEAD
 .settings
 /target
-=======
-.settings/
-target/
->>>>>>> 45a5f98d6aa3fde920ba71db4c34364cf9e470a7
 /src/main/java/CaetanoSoft/Utilities/Internationalization/Resources/en_US
 
