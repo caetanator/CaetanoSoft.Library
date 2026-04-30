@@ -1,9 +1,10 @@
-﻿**/nbproject/private/
+﻿**/nbproject/private
 /.vs
 /.vscode
 .classpath
+.github
 .project
-.settings/
-target/
+.settings
+/target
 /src/main/java/CaetanoSoft/Utilities/Internationalization/Resources/en_US
 
