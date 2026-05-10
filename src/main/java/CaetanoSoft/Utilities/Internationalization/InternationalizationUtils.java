@@ -152,8 +152,13 @@ public class InternationalizationUtils
             {
                 // Install the language resources for the Java PrinterJob.getPrinterJob().printDialog()
                 try {
-                    UIManager.getDefaults().addResourceBundle("sun.print.resources." + strResorceLang + "serviceui");
-                    //ResourceBundle messageRB = ResourceBundle.getBundle("sun.print.resources.serviceui", Locale.of("en"));
+// https://stackoverflow.com/questions/17840588/jtable-printing-dialog-with-locale
+// https://github.com/mopenjdk/jdk7-jdk/blob/master/src/windows/classes/sun/awt/windows/WPrinterJob.java
+                    UIManager.getDefaults().addResourceBundle("sun.print.resources.serviceui" + strResorceLang);
+                    //Class cls = Class.forName("sun.print.resources.serviceui");
+                    //ClassLoader cLoader = cls.getClassLoader();
+                    //Module module = cLoader.getUnnamedModule()
+                    //ResourceBundle messageRB = ResourceBundle.getBundle("sun.print.resources.serviceui", Locale.of("en"), cLoader);
                 } catch (java.util.MissingResourceException e) {
                     throw new Error("Fatal: Resource for ServiceUI " +
                                     "is missing");
